@@ -1,6 +1,12 @@
 # ever-random
 Evernote Random Notes ChromeTab
 
+
+# Sample projects
+https://github.com/gothinkster/angular-realworld-example-app
+https://github.com/ngrx/example-app
+https://auth0.com/blog/creating-beautiful-apps-with-angular-material/
+    https://www.techiediaries.com/angular-material-navigation-toolbar-sidenav/
 # Angular JS
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.3.2.
