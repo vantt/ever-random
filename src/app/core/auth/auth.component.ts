@@ -1,7 +1,14 @@
+<<<<<<< HEAD
 import {Component, OnInit} from '@angular/core';
 import {ActivatedRoute} from '@angular/router';
 import {filter} from 'rxjs/operators';
 import {FormControl} from '@angular/forms';
+=======
+import { Component, OnInit } from '@angular/core';
+import {AuthService} from './auth.service';
+import {ActivatedRoute} from '@angular/router';
+import { filter } from 'rxjs/operators';
+>>>>>>> 4cb1b7b... new code
 
 @Component({
   selector: 'app-auth',
@@ -9,6 +16,7 @@ import {FormControl} from '@angular/forms';
   styleUrls: ['./auth.component.css']
 })
 export class AuthComponent implements OnInit {
+<<<<<<< HEAD
   private oauthVerifier: string;
 
   constructor(private route: ActivatedRoute) {
@@ -27,5 +35,13 @@ export class AuthComponent implements OnInit {
         });
       }
     });
+=======
+  private order: string;
+
+  constructor(private auth: AuthService, private route: ActivatedRoute) { }
+
+  ngOnInit() {
+    this.route.queryParams.pipe(filter(params => params.order)).subscribe(params => this.order = params.order);
+>>>>>>> 4cb1b7b... new code
   }
 }

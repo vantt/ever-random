@@ -2,11 +2,20 @@
   <mat-sidenav  #sidenav role="navigation">
     <mat-nav-list>
       <a mat-list-item
+<<<<<<< HEAD
          routerLink="/login">
+=======
+         *ngIf="!auth.isAuthenticated()"
+         (click)="auth.login()">
+>>>>>>> 4cb1b7b... new code
         <mat-icon class="icon">input</mat-icon>
         <span class="label">Login</span>
       </a>
       <a mat-list-item
+<<<<<<< HEAD
+=======
+         *ngIf="auth.isAuthenticated()"
+>>>>>>> 4cb1b7b... new code
          routerLink="/">
         <mat-icon class="icon">home</mat-icon>
         <span class="label">Home</span>
@@ -17,7 +26,12 @@
         <span class="label">Dashboard</span>
       </a>
       <a  mat-list-item
+<<<<<<< HEAD
            type="button">
+=======
+          *ngIf="auth.isAuthenticated()"
+          (click)="auth.logout()" type="button">
+>>>>>>> 4cb1b7b... new code
         <mat-icon class="icon">input</mat-icon>
         <span class="label">LogOut</span>
       </a>
@@ -39,14 +53,23 @@
         <ul fxLayout fxLayoutGap="20px" class="navigation-items">
           <li>
             <a
+<<<<<<< HEAD
               routerLink="/login">
+=======
+              *ngIf="!auth.isAuthenticated()"
+              (click)="auth.login()">
+>>>>>>> 4cb1b7b... new code
               <mat-icon class="icon">input</mat-icon>
               <span  class="label">Login</span>
             </a>
           </li>
           <li>
             <a
+<<<<<<< HEAD
 
+=======
+              *ngIf="auth.isAuthenticated()"
+>>>>>>> 4cb1b7b... new code
               routerLink="/">
               <mat-icon class="icon">home</mat-icon>
               <span class="label">Home</span>
@@ -54,14 +77,22 @@
           </li>
           <li>
             <a
+<<<<<<< HEAD
               routerLink="/board">
+=======
+              routerLink="/dashboard">
+>>>>>>> 4cb1b7b... new code
               <mat-icon class="icon">dashboard</mat-icon>
               <span class="label">Board</span>
             </a>
           </li>
           <li>
             <a
+<<<<<<< HEAD
 
+=======
+              *ngIf="auth.isAuthenticated()"
+>>>>>>> 4cb1b7b... new code
               (click)="auth.logout()" type="button"
             >
               <mat-icon class="icon">input</mat-icon>
