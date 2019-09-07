@@ -15,6 +15,7 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 ng new everRandom --directory "ever-random"
 npm install --save @angular/material @angular/cdk @angular/animations @angular/flex-layout
 npm install --save @ngrx/store @ngrx/effects @ngrx/store-devtools @ngrx/router-store ngrx-actions
+npm install --save rjxs
 
 ng add @angular/material
 
